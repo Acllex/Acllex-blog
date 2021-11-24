@@ -3,8 +3,17 @@
  **HTML是由伯纳斯-李（Tim Berners Lee）发明的。**   
 
  **HTML的起手**
-
-![html](html.png)   
+```HTML
+<!DOCTYPE html> 文档类型
+<head></head> 页面中不显示
+<html lang="en"></html> html标签 lang可以改为zh-CN
+<meta charset="utf-8"> 字符编码
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 使用最新内核
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 禁用缩放，兼容手机
+<title>Document</title> 页面标题
+<body></body> 网页内容
+```
+ 
 
 
 **常用的表章节的标签**   
@@ -13,7 +22,7 @@
 3. article标签 文章
 4. p标签 段落
 5. header 头部区域
-6. main 主要内容
+6. main 主要内容，一个页面最好只有一个main
 7. aside 旁支内容
 8. footer 脚部
 9. div 划分
