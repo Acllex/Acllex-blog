@@ -11,14 +11,14 @@
 
 ## CSS 动画的两种做法（transition和animation）
 
-**transition**
+**transform**
 ```CSS
-transition: translate() //位移，两个值，对应X、Y轴，transition: translate(-50%，-50%)可以让绝对定位元素居中
-transition: translateX() //沿X轴位移
-transition: translateY() //沿Y轴位移
-transition: scale() //缩放，也分为X、Y轴
-transition: rotate() //旋转，单位是deg
-transition: skew()  //倾斜
+transform: translate() //位移，两个值，对应X、Y轴，transition: translate(-50%，-50%)可以让绝对定位元素居中
+transform: translateX() //沿X轴位移
+transform: translateY() //沿Y轴位移
+transform: scale() //缩放，也分为X、Y轴
+transform: rotate() //旋转，单位是deg
+transform: skew()  //倾斜
 /* 要配合 transition 才有动画效果 */
 /* inline元素要变成block元素才支持transform */
 ```
