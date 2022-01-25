@@ -53,3 +53,34 @@ on("click", "#list", "li", (e) => {
   console.log(e.target.innerHTML);
 });
 ```
+
+## 阻止冒泡
+
+w3c 的方法是**_e.stopPropagation()_**，IE 则是使用**_e.cancelBubble = true_**
+
+```javascript
+window.event ? (window.event.cancelBubble = true) : e.stopPropagation(); // 判断是ie还是w3c
+```
+
+## 阻止默认动作
+
+有一些 html 元素默认的行为，比如说 a 标签，点击后有跳转动作；
+form 表单中的 submit 类型的 input 有一个默认提交跳转事件；reset 类型的 input 有重置表单行为。
+如果你想阻止这些浏览器默认行为，JavaScript 为你提供了方法。
+
+```javascript
+let a = document.querySelector("#a")[0];
+a.onclick = function (e) {
+  alert("跳转动作被我阻止了");
+  e.preventDefault();
+};
+function preventDefaults(e) {
+  if (window.event) {
+    //IE中阻止函数器默认动作的方式
+    window.event.returnValue = false;
+  } else {
+    //阻止默认浏览器动作(W3C)
+    e.preventDefault();
+  }
+}
+```
