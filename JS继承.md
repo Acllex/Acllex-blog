@@ -14,10 +14,13 @@ function inheritObject(obj) {
 let book = {
   name: "js book",
   alikeBook: ["css book", "html book"],
+  read: () => {
+    console.log("read book is funny");
+  },
 };
 
 // newBook继承了book
-let newBook = inheritObject(book);
+let newBook.prototype = inheritObject(book);
 newBook.name = "JavaScript Book";
 newBook.alikeBook.push("json book");
 console.log(newBook.alikeBook);
