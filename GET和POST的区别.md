@@ -9,4 +9,4 @@
 - 对参数的数据类型，GET 只接受 ASCII 字符，而 POST 没有限制
 - GET 比 POST 更不安全，因为参数直接暴露在 URL 上，所以不能用来传递敏感信息
 - GET 参数通过 URL 传递，POST 放在 Request body 中
-- 语义——GET 用于获取资源，POST 用于提交资源
+- 语义 —— GET 用于获取资源，POST 用于提交资源
