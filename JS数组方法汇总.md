@@ -265,3 +265,20 @@
     console.log(a); // true
     console.log(arr); // [1,2,3,4,5]
     ```
+
+21. **_arr.fill(内容，起始下标(可省略),结束下标(可省略))_**
+
+    - 用一个固定值填充一个数组中从起始索引到终止索引内的全部元素，不包括终止索引
+    - 返回值：没有返回值
+    - 会修改原数组
+
+    ```js
+    const array1 = [1, 2, 3, 4];
+    // fill with 0 from position 2 until position 4
+    console.log(array1.fill(0, 2, 4)); // [1, 2, 0, 0]
+
+    // fill with 5 from position 1
+    console.log(array1.fill(5, 1)); // [1, 5, 5, 5]
+
+    console.log(array1.fill(6)); // [6, 6, 6, 6]
+    ```
