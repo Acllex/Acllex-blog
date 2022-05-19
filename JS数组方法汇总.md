@@ -282,3 +282,16 @@
 
     console.log(array1.fill(6)); // [6, 6, 6, 6]
     ```
+
+22. **_arr.reduce( fn(total, num), initialValue )_**
+
+    - 累加器，total 为初始值或者计算结束后的返回值，num 当前元素，initialValue 传递元素初始值
+    - 返回值：计算结果
+    - 不会修改原数组
+
+    ```js
+    const array1 = [1, 2, 3, 4];
+    const num = arr.reduce((total, num) => {
+      return total + num;
+    });
+    ```
