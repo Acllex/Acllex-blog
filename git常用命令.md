@@ -11,6 +11,7 @@
 9. `git checkout 分支名` //切换分支
 10. `git checkout -b` 新分支名 // 创建新分支并且切换
 11. `git push origin` 分支名 // 将新分支推送到 github
+12. `git merge` 分支名 // 将分支合并到当前分支
 
 - Please make sure you have the correct access rights and the repository exists 问题解决
   - `cat ~/.ssh/id_rsa.pub` 然后将 ssh key 复制到 github 上即可
